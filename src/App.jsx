@@ -108,7 +108,7 @@ function App() {
     }
 
     function removeEducationDiv(e) {
-        const id = parseInt(e.target.parentNode.getAttribute("edId"), 10);
+        const id = parseInt(e.target.parentNode.getAttribute("data-edid"), 10);
         console.log(id);
         setEducation((prevState) => ({
             ...prevState,
@@ -117,7 +117,7 @@ function App() {
     }
 
     function removeWorkDiv(e) {
-        const id = parseInt(e.target.parentNode.getAttribute("wID"), 10);
+        const id = parseInt(e.target.parentNode.getAttribute("data-wiD"), 10);
         console.log(id);
         setWork((prevState) => (
             prevState.filter((entry, index) => index !== id)
