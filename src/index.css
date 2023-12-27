@@ -311,9 +311,9 @@ label {
 
 .add-more-button:hover {
   background-color: lightblue;
-}
+} 
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   #root {
     height: 100%;
     grid-template-columns: 100%;
@@ -325,14 +325,12 @@ label {
   }
 
   #main2 {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
   .icon-details {
-    width: 70vw;
+    padding: 5px 0px;
   }
 }
 
